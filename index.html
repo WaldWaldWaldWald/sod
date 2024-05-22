@@ -12,7 +12,7 @@
             color: #343a40;
         }
         .navbar {
-            background-color: #001f3f;
+            background-color: #123456;
         }
         .navbar-brand {
             color: #ffffff;
@@ -39,6 +39,10 @@
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
+        .download-buttons img {
+            width: 160px;
+            margin: 10px;
+        }
         .content-section {
             padding: 60px 0;
         }
@@ -46,7 +50,7 @@
             margin-bottom: 2rem;
         }
         .footer {
-            background-color: #001f3f;
+            background-color: #123456;
             color: #ffffff;
             padding: 20px 0;
         }
@@ -57,6 +61,10 @@
         }
         .footer a:hover {
             color: #cccccc;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -70,12 +78,14 @@
     <header class="hero-section">
         <h1>Sails of Destiny</h1>
         <p>Embark on an epic adventure across the seas.</p>
-        <a href="https://play.google.com/store">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Download on Google Play" width="180">
-        </a>
-        <a href="https://www.apple.com/app-store/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Download_on_the_App_Store_Badge.svg/512px-Download_on_the_App_Store_Badge.svg.png" alt="Download on App Store" width="160">
-        </a>
+        <div class="download-buttons">
+            <a href="https://play.google.com/store">
+                <img src="file-z6ahU9RwCVVg1I6GBcdYnHAK" alt="Download on Google Play">
+            </a>
+            <a href="https://www.apple.com/app-store/">
+                <img src="file-bKckUwYPsbRBZ7DCDshNiq8P" alt="Download on App Store">
+            </a>
+        </div>
     </header>
 
     <!-- Image Section -->
@@ -178,10 +188,10 @@
     <footer class="footer text-center">
         <div class="container">
             <p>&copy; 2024 Sails of Destiny. All Rights Reserved.</p>
-            <div>
-                <a href="#" class="text-white">Facebook</a> |
-                <a href="#" class="text-white">Twitter</a> |
-                <a href="#" class="text-white">Instagram</a>
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" alt="Twitter"></a>
             </div>
         </div>
     </footer>
