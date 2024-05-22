@@ -16,10 +16,10 @@
         }
         .navbar-brand {
             color: #ffffff;
+            font-weight: bold;
         }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+        .navbar-brand:hover {
+            color: #cccccc;
         }
         .hero-section {
             background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
@@ -33,17 +33,33 @@
         }
         .hero-section h1 {
             font-size: 4rem;
+            margin-bottom: 1rem;
         }
         .hero-section p {
             font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .hero-section .btn {
+            margin: 0.5rem;
         }
         .content-section {
             padding: 60px 0;
+        }
+        .content-section h2 {
+            margin-bottom: 2rem;
         }
         .footer {
             background-color: #001f3f;
             color: #ffffff;
             padding: 20px 0;
+        }
+        .footer a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #cccccc;
         }
     </style>
 </head>
@@ -57,8 +73,8 @@
     <header class="hero-section">
         <h1>Sails of Destiny</h1>
         <p>Embark on an epic adventure across the seas.</p>
-        <a href="https://play.google.com/store" class="btn btn-primary">Download on Google Play</a>
-        <a href="https://www.apple.com/app-store/" class="btn btn-primary">Download on App Store</a>
+        <a href="https://play.google.com/store" class="btn btn-primary btn-lg">Download on Google Play</a>
+        <a href="https://www.apple.com/app-store/" class="btn btn-success btn-lg">Download on App Store</a>
     </header>
 
     <!-- Image Section -->
@@ -67,13 +83,13 @@
             <h2 class="text-center">Gallery</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="https://via.placeholder.com/350x250" class="img-fluid" alt="Screenshot 1">
+                    <img src="https://via.placeholder.com/350x250" class="img-fluid mb-3" alt="Screenshot 1">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://via.placeholder.com/350x250" class="img-fluid" alt="Screenshot 2">
+                    <img src="https://via.placeholder.com/350x250" class="img-fluid mb-3" alt="Screenshot 2">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://via.placeholder.com/350x250" class="img-fluid" alt="Screenshot 3">
+                    <img src="https://via.placeholder.com/350x250" class="img-fluid mb-3" alt="Screenshot 3">
                 </div>
             </div>
         </div>
@@ -97,7 +113,7 @@
     <section class="content-section">
         <div class="container">
             <h2 class="text-center">About the Game</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. 
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. 
             Suspendisse potenti. Etiam viverra leo a libero feugiat auctor. Proin euismod sapien vel ex laoreet, vitae consequat risus cursus.</p>
         </div>
     </section>
