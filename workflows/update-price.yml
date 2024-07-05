@@ -1,0 +1,28 @@
+name: Update Bitcoin Price
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Запуск каждые 5 минут
+  push:
+    branches:
+      - main
+
+jobs:
+  update-price:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch Bitcoin price
+        run: |
+          PRICE=$(curl -s https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT | jq -r '.price')
+          echo $PRICE > btc.txt
+
+      - name: Commit and push updated price
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add btc.txt
+          git commit -m 'Update Bitcoin price'
+          git push
